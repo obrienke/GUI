@@ -1,0 +1,25 @@
+/* universal selector */
+*{
+	font-size: medium;
+}
+
+/* element selector */
+h3{
+	color: blue;
+	background-color: orange;
+}
+/* id selector */
+#p3{
+	color: green;
+	font-size: x-large;
+}
+
+/* class selector */
+.same{
+	color: pink;
+    font-size: xx-large;
+}
+
+p.same{
+	color: black;
+}
