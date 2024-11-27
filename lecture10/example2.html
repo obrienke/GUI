@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Example 2</title>
+        <style>
+            div{border: 1px solid red;}
+            #container{
+                display: grid;
+                grid-template-columns: 2fr 4fr 4fr 2fr;
+                grid-template-rows: 200px 400px 75px;
+                gap: 5px;
+                padding: 5px;
+            }
+            #header, #footer{grid-column: span 4;}
+        </style>
+    </head>
+    <body>
+        <a href="index.html">Lecture 10 Home Page</a><br><br>
+        <div id="container">
+            <div id="header">Header</div>
+            <div id="box1">
+                Box 1
+            </div>
+            <div id="box2">Box 2</div>
+            <div id="box 3">Box 3</div>
+            <div id="box4">Box 4</div>
+            <div id="footer">Footer</div>
+        </div>
+    </body>
+</html>

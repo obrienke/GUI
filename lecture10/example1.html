@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Example 1</title>
+        <style>
+            div{border: 1px solid red;}
+            #container{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                /*grid-template-rows: 400px 100px;*/
+                gap: 5px;
+                padding: 5px;
+            }
+            #box1{
+                grid-column: span 3;
+            }
+            #box2{
+                grid-row: span 2;
+            }
+            #box4{
+                grid-column: span 2;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="index.html">Lecture 10 Home Page</a><br><br>
+        <div id="container">
+            <div id="box1">
+                <h1>Box 1</h1>
+            </div>
+            <div id="box2">Box 2</div>
+            <div>Box 3</div>
+            <div id="box4">Box 4</div>
+        </div>
+    </body>
+</html>
