@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	  <meta charset="utf-8" />	
+	  <meta name="viewport" content="width=device-width, initial-scale=1" />
+	  <title>Lecture 14</title>
+	  <style>
+		.container > div{
+			border: 1px solid red;
+		}
+		.container{
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-template-rows: 50px 100px 200px;
+			gap: 5px;
+		}
+		#box1, #box2, #box3{ 
+			grid-column: span 2;
+		}
+		#box2{ grid-row: span 2;}
+		#box4{ grid-column: span 4;}
+	  </style>
+	</head>
+
+	<body>
+		<div class="container">
+			<div id="box1">1</div>
+			<div id="box2">2</div>
+			<div id="box3">3</div>
+			<div id="box4">4</div>
+		</div>
+		<a href="index.html" id="home">Lecture 13 Home Page</a>	
+	</body>
+</html>
+
+
+
