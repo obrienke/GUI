@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	  <meta charset="utf-8" />	
+	  <meta name="viewport" content="width=device-width, initial-scale=1" />
+	  <title>Lecture 16</title>
+	</head>
+
+	<body>
+		<p>To open the console to see output from console.log(), hit the f12 key and select console if not already open by default</p>
+		<a href="..\index.html">GUI Home Page</a>
+		<script>
+			var number1 = 6;
+			number1 = "six";
+			number1 = 6.0;
+
+			let number2 = 12;
+			const number3 = 24;
+
+			alert("number 1 is " + number1);
+			console.log("number 2 is: " + number2);
+
+			let result = number1 + number2;
+			console.log(number1 + " + " +number2 + " = " + result);
+
+			let name = prompt("Enter name");
+			console.log(name);
+			let number4 = prompt("Enter a number");
+			let number5 = prompt("Enter another number");
+			alert(number4 + " + " + number5 + " = " +(Number(number4) + Number(number5)));
+
+			if(number5 > 10){
+				alert(number5 + " is greater than 10");
+			}else{
+				alert(number5 + " is not greater than 10");
+			}
+
+			let i = 1;
+			while(i <= 3){
+				console.log("in while");
+				i++;
+			}
+			for(let i=1; i <= 5; i++){
+				console.log("in for");
+			}
+		</script>
+	</body>
+</html>
+
+
+
