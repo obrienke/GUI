@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>DOM</title>
+    </head>
+
+    <body>
+        <a href="..\index.html">GUI Home Page</a>
+        <p id="para1">Goodbye</p>
+        <p class="paras"></p>
+        <p class="paras"></p>
+        <p class="paras"></p>
+        <img src="" alt="an image" id="image1">
+    </body>
+</html>
+
+<script>
+    let imgEl = document.getElementById("image1");
+    //alert(imgEl.getAttribute("src"));
+    imgEl.setAttribute("src","hamburg.png"); // set the image
+    //alert(imgEl.getAttribute("src"));
+    let pEl = document.getElementById("para1");
+    //let anotherPEl = document.querySelector("#para1");
+    pEl.textContent = "Hello";
+    pEl.innerHTML += "<h2>Hello Again</h2>";
+    
+    let paraEls = document.getElementsByClassName("paras");
+    //let anotherParaEls = document.querySelectorAll(".paras");
+    for(let i = 0; i < paraEls.length; i++){
+        paraEls[i].innerHTML = "para " + (i + 1);
+    }
+
+    let allParas = document.getElementsByTagName("p");
+    for(let i = 0; i < allParas.length; i++){
+        allParas[i].style.color = "red";
+    }
+    
+
+
+</script>
