@@ -54,3 +54,10 @@ n.addEventListener("keypress", kp);
 function kp(){
     alert("keypress");
 }
+
+
+//example using an anonymous function.
+//This example attaches an event listerner to the page load event
+//When the page loads it runs the function, which has no name and the code for this
+//no name function is included as the second argument instead of a function name
+addEventListener("load", function(){ this.alert("Welcome to Event Handler examples")}) 
