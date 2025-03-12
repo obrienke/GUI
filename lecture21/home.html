@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Home</title>
+	<style>
+		
+		/*Moves everything into the center of the page - text remains aligned as expected*/
+		body{ 
+			max-width: max-content;
+			margin: auto;
+		}				
+		.container{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 4px;
+			width: 600px;
+			margin-top: 20px;	
+		}	
+		#box1{
+			grid-column: span 2;
+			padding: 15px;
+			font-size: 150%;
+			text-align: center;
+		}
+		#box2, #box3{
+			background-color: lightblue; 
+			text-align: center;
+		}
+		#box1, #box2, #box3{padding: 15px;}
+		div{border-radius: 5px;}
+		a{
+			color: white;
+			background-color: lightblue;		
+			padding: 10px;	
+		}
+		#qty1, #qty2{width: 15%;}
+		#button1, #button2{ 
+			background-color: white; 
+			color: lightblue;
+			padding: 10px;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+	<body>
+		<div class="container">
+			<div id="box1"><a href="#">Home</a> <a href="cart.html">Cart</a></div>
+			<div id="box2">
+				Socks cost €5 a pair. <br><br>
+				How many pairs of socks do you wish to order?<br><br>
+				<label for="qty1">Qty: </label><input id="qty1"><br><br>
+				<button id="button1" onclick="add(1)">Add to cart</button>
+			</div>
+			<div id="box3">
+				Shoes cost €50 a pair. <br><br>
+				How many pairs of shoes do you wish to order?<br><br>
+				<label for="qty2">Qty: </label><input id="qty2"><br><br>
+				<button id="button2" onclick="add(2)">Add to cart</button>
+			</div>
+			<br><br><a href="index.html">Link to lecture 21 Homepage</a>
+		</div>
+		<script>
+			function add(item){
+				localStorage.message="You have items in the cart";
+				if(item == 1){
+					sessionStorage.setItem("socks", document.getElementById("qty1").value);
+				}else{
+					sessionStorage.shoes = document.getElementById("qty2").value
+				}
+				alert("Item added to cart");
+			}
+		</script>
+	</body>	
+</html>
+

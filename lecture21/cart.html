@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Cart</title>
+	<style>
+		
+		/*Moves everything into the center of the page - text remains aligned as expected*/
+		body{ 
+			max-width: max-content;
+			margin: auto;
+		}				
+		.container{
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-gap: 4px;
+			width: 600px;
+			margin-top: 20px;	
+		}	
+		#box1{
+			padding: 15px;
+			text-align: center;
+		}
+		#box2{
+			background-color: lightblue; 
+			text-align: center;
+		}
+		#box1, #box2{padding: 15px;}
+		div{border-radius: 5px;}
+		a{
+			color: white;
+			background-color: lightblue;		
+			padding: 10px;	
+		}
+		table, tr, th, td{
+			border: 1px solid white; 
+			border-collapse: collapse;
+		}
+		th, td {padding: 5px;}
+		table{margin: auto;}
+	</style>
+</head>
+	<body>
+		<div class="container">
+			<div id="box1"><a href="home.html">Home</a> <a href="#">Cart</a></div>
+			<div id="box2">
+				<table>
+					<tr>
+						<th>#</th>
+						<th>Product</th>
+						<th>Cost per pair</th>
+						<th>Quantity ordered</th>
+						<th>Total(€)</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>Socks</td>
+						<td>5</td>
+						<td id="qty1">2</td>
+						<td id="total1">10</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Shoes</td>
+						<td>50</td>
+						<td id="qty2">1</td>
+						<td id="total2">50</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<th>Total Cost(€)</th>
+						<th id="total">60</th>
+					</tr>						
+				</table>
+			</div>
+		</div>
+		<script>
+			function read(){
+				let socksQty = sessionStorage.socks;
+				let shoesQty = sessionStorage.getItem(sessionStorage.key(0));
+				let socksTotal = socksQty * 5;
+				let shoesTotal = shoesQty * 50;
+				let total = shoesTotal + socksTotal;
+				document.getElementById("qty1").textContent = socksQty;
+				document.getElementById("total1").textContent = socksTotal;
+				document.getElementById("qty2").textContent = shoesQty;
+				document.getElementById("total2").textContent = shoesTotal;
+				document.getElementById("total").textContent = total;
+			}
+			read();
+		</script>
+	</body>	
+</html>
+
