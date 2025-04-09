@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Home</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+		<link href="css/custom.css" rel="stylesheet">
+  </head>
+	<body>
+		<div class="container text-center">
+			<!-- using nav pills: https://getbootstrap.com/docs/5.3/components/navs-tabs/#pills -->
+			<ul class="nav nav-pills mt-4">
+			  <li class="nav-item">
+				<a class="nav-link text-bg-dark text-white" aria-current="page" href="#">Home</a> <!-- Note: class for active link: text-bg-dark text-white -->
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link text-dark" href="cart.html">Cart</a> <!-- Note: class for link: text-dark -->
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link text-dark" href="checkout.html">Checkout</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link text-dark" href="../index.html">GUI Home Page</a>
+			  </li>
+			</ul>
+			
+			<div class="p-4 text-bg-dark text-white mt-2 mb-2 rounded-4">
+			  <img src="img/nike_logo.jpg" alt="Nike Logo"/>
+			  <h1>Nike</h1>
+			  <p>Welcome to the Nike Store. We have some runners available in this store at reduced prices. If you are interested in purchasing any of the runners on offer, just enter the quantity you want and click the buy button. You may then go to the cart page, to see your order, and can complete your order on the checkout page. Thank you for visiting our online store.</p>
+			</div>	
+
+			
+			<div class="row">
+				<div class="col-12 col-md-6 col-lg-3 mb-2">
+					<!-- Using images card: https://getbootstrap.com/docs/5.3/components/card/#example -->
+					<div class="card">
+						<img src="img/shoes-1.jpg" class="card-img-top" alt="shoes 1">
+						<div class="card-body text-bg-dark text-white">
+							<p class="card-text">Nike X Comfort</p>
+							<p class="card-text">Cost: €100</p>
+							<label for="qty1">Quantity:</label> <input class="w-25" id="qty1" value="0"> <br><br>
+							<a href="#" class="btn btn-primary" id="btn1">Buy</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3 mb-2">
+					<!-- Using images card: https://getbootstrap.com/docs/5.3/components/card/#example -->
+					<div class="card">
+						<img src="img/shoes-2.jpg" class="card-img-top" alt="shoes 1">
+						<div class="card-body text-bg-dark text-white">
+							<p class="card-text">Nike Night</p>
+							<p class="card-text">Cost: €150</p>
+							<label for="qty2">Quantity:</label> <input class="w-25" id="qty2" value="0"> <br><br>
+							<a href="#" class="btn btn-primary" id="btn2">Buy</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3 mb-2">
+					<!-- Using images card: https://getbootstrap.com/docs/5.3/components/card/#example -->
+					<div class="card">
+						<img src="img/shoes-3.jpg" class="card-img-top" alt="shoes 1">
+						<div class="card-body text-bg-dark text-white">
+							<p class="card-text">Nike Speed 100</p>
+							<p class="card-text">Cost: €180</p>
+							<label for="qty3">Quantity:</label> <input class="w-25" id="qty3" value="0"> <br><br>
+							<a href="#" class="btn btn-primary" id="btn3">Buy</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3 mb-2">
+					<!-- Using images card: https://getbootstrap.com/docs/5.3/components/card/#example -->
+					<div class="card">
+						<img src="img/shoes-4.jpg" class="card-img-top" alt="shoes 1">
+						<div class="card-body text-bg-dark text-white">
+							<p class="card-text">Nike Zoom</p>
+							<p class="card-text">Cost: €80</p>
+							<label for="qty4">Quantity:</label> <input class="w-25" id="qty4" value="0"> <br><br>
+							<a href="#" class="btn btn-primary" id="btn4">Buy</a>
+						</div>
+					</div>
+				</div>
+			</div>  	
+		</div>	
+		<script src="js/index.js"></script>
+	</body>
+</html>
