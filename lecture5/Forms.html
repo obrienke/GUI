@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+	  	<title>Forms</title>
+	</head>
+
+	<body>
+        <a href="..\index.html">GUI Home Page</a>
+		<h1>Forms</h1>
+        <form>
+            <table>
+                <tr>
+                    <th>Email:</th>
+                    <td><input type="email"></td>
+                </tr>
+                <tr>
+                    <th>Username:</th>
+                    <td><input></td>
+                </tr>
+                <tr>
+                    <th>Password:</th>
+                    <td><input type="password"></td>
+                </tr>
+            </table>
+
+            <br><br>
+            Add a comment:
+            <br><br>
+            <textarea rows="4" cols="80" placeholder="enter a comment here..."></textarea>
+
+            <h2>Favourite Language</h2>
+            <input type="radio" name="fav" value="java">Java<br>
+            <input type="radio" name="fav" value="python">Python<br>
+            <input type="radio" name="fav" value="javascript">JavaScript<br>
+
+            <h2>Favourite Subject</h2>
+            <input type="checkbox" checked>Maths<br>
+            <input type="checkbox">Irish<br>
+            <input type="checkbox">English<br>
+
+            <h2>Favourite Team</h2>
+            <select>
+                <option value="so" disabled selected>Select one</option>
+                <option value="c">Chelsea</option>
+                <option value="a">Arsenal</option>
+                <option value="l">Liverpool</option>
+            </select>
+
+            <input type="submit">
+        </form>
+	</body>
+</html>
