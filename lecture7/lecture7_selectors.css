@@ -1,0 +1,17 @@
+/*Element selector*/
+p{
+    color: blue;
+}
+/*Id selector*/
+#second{
+    color: orange;
+    background-color: grey;
+}
+/*Class selector*/
+.threeFour{
+    color: green;
+}
+/*Universal selector*/
+*{
+    font-size: 40px;
+}
