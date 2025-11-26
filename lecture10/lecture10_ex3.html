@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Grids</title>
+        <style>
+            .container > div{
+                border: 1px solid blue;
+            }
+            .container{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 40px 80px;
+                gap: 2px;
+            }
+            #first{
+                grid-row: span 2;
+            }
+            #last{
+                grid-column: span 2;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <a href="index.html">Lecture 10 Home</a></br></br>
+        <div class="container">
+
+            <div id="first"></div>
+            <div></div>
+            <div></div>
+            <div id="last"></div>
+            
+        </div>
+    </body>
+</html>

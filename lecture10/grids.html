@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Box Model</title>
+        <style>
+            .container1 > div{
+                border: 1px solid green;
+            }
+            .container2 > div{
+                border: 1px solid red;
+            }
+            .container3 > div{
+                border: 1px solid blue;
+            }
+            .container{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 2px;
+            }
+            .container1{
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                grid-template-rows: 40px 80px 80px 40px;
+                gap: 2px;        
+            }
+            .container2{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: 40px 80px 80px 40px;
+                gap: 2px;
+            }
+            .container3{
+                display: grid;
+                grid-column: span 2;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 40px 80px;
+                gap: 2px;
+            }
+            .all{
+                grid-column: span 2;
+            }
+            .span2{
+                grid-column: span 2;
+            }
+            .span3{
+                grid-column: span 3;
+            }
+            .span4{
+                grid-column: span 4;
+            }
+            .rs2{
+                grid-row: span 2;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="index.html">Lecture 10 Home</a></br></br>
+        <div class="container">
+            <div class="container1">
+                <div class="all"></div>
+                <div class="all"></div>
+                <div class="all"></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="container2">
+                <div></div>
+                <div class="span2"></div>
+                <div></div>
+                <div class="span2"></div>
+                <div></div>
+                <div></div>
+                <div class="span3"></div>
+                <div></div>
+                <div class="span4"></div>
+            </div>
+            <div class="container3">
+                <div class="rs2"></div>
+                <div></div>
+                <div></div>
+                <div class="span2"></div>
+            </div>
+        </div>
+    </body>
+</html>
