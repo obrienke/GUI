@@ -1,0 +1,40 @@
+/*Font: Salsa*/
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+/*Alternatively you can use the <link> element in html to import*/
+
+body{
+	background-color: red;
+	color: white;
+}
+
+img{
+	width: 200px;
+	height: 200px;
+	border: 5px dotted white;
+}
+
+a{
+	background-color: white;
+	border-radius: 10px;
+	text-decoration: none;
+	padding: 2px;
+}
+
+a:hover{
+	background-color: red;
+	color: white;
+}
+
+#final{
+	font-family: 'Salsa', cursive;
+	font-size: 150%;
+}
+
+#home{
+	text-decoration: none;
+	background-color: white;
+	padding: 10px;
+	border-radius: 10px; 
+	box-shadow: 2px 1px 1px black;
+	margin: 10px;
+}
