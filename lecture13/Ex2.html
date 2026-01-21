@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Exercise 2</title>
+  <style>
+	.inside{
+		border: 1px solid red;
+		background-color: red;
+		color: white;
+		font-size: 200%;
+	}
+	.container{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 50px 150px 150px 50px;
+		gap: 5px;
+	}
+
+	.span2{
+		grid-column: span 2;
+	}
+	.span3{
+		grid-column: span 3;
+	}
+	.span4{
+		grid-column: span 4;
+	}
+	.span5{
+		grid-column: span 5;
+	}
+
+  </style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="inside">1</div>
+		<div class="inside span2">2</div>
+		<div class="inside">3</div>
+		<div class="inside">4</div>
+		<div class="inside span3">5<br><br>Question 2</div>
+		<div class="inside span2">6</div>
+		<div class="inside span4">7</div>
+		<div class="inside">8</div>
+		<div class="inside span5">9</div>
+	</div>
+	<br><br>
+	<a href="index.html">Lecture 13 Home</a></br></br>
+</body>
+
+</html>
