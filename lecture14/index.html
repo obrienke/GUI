@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Exercise 1</title>
+</head>
+
+<body>
+	<a href="../index.html">GUI Home Page</a>
+
+	<h2>JavaScript Introduction</h2>
+
+	<p>To access the console, open development tools - use the F12 key.</p>
+	
+	<script>
+		let name = "Kevin";
+		//name = 5;
+		var number = 3;
+		const anotherNumber = 10; let x = 5;
+		alert("Name: " + name);
+		alert("<h2>Name: </h2>" + name);
+		alert("Kevin\nO'Brien")
+		document.write("Number: " + number)
+		document.write("<h1>Hello</h1>")
+		console.log("Another Number: " + anotherNumber);
+
+		let first = 3;
+		let second = 6;
+		let result = first + second;
+
+		console.log(first + " + " + second + " = " + result);
+
+		first = prompt("Enter first number");
+		second = prompt("Enter second number");
+		console.log(first + " + " + second + " = " + (Number(first) + +second));
+
+		let a = 5;
+		if(a == 5){
+			console.log("A is 5")
+		}else{
+			console.log("A is not 5");
+		}
+		let counter = 1;
+		while(counter < 3){
+			console.log(counter);
+			counter++;
+		}
+		for(let i = 0; i < 5; i++){
+			console.log(i);
+		}
+	</script>
+</body>
+
+</html>
