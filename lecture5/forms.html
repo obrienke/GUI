@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Forms</title>
+	</head>	
+	<body>
+		<!-- Form -->
+		<a href="../index.html">Home Page</a>
+		<h1>Lecture 5 - Forms</h1>
+		<form>
+			<!-- Table with input elements - default type="text" -->
+			<table>
+				<tr>
+					<th>Email:</th>
+					<td><input type="email"></td>
+				</tr>
+				<tr>
+					<th>Username:</th>
+					<td><input></td>
+				</tr>
+				<tr>
+					<th>Password:</th>
+					<td><input type="password"></td>
+				</tr>
+			</table>
+			
+			<!-- Text Area-->
+			<br><br>
+			Add a Comment: 
+			<br><br>
+			<textarea rows="4" cols="20" placeholder="Some text here" ></textarea>
+			
+			<!-- Radio Buttons -->
+			<h2>Favourite Language</h2>
+			<input type="radio" name="fav" value="java"> Java<br>
+			<input type="radio" name="fav" value="js" checked> JavaScript<br>
+			<input type="radio" name="fav" value="c"> C
+			
+			<!-- Checkboxes -->
+			<h2>Favourite Subject</h2>
+			<input type="checkbox"> Maths <br>
+			<input type="checkbox" checked> English <br>
+			<input type="checkbox"> Irish
+			
+			<!-- Drop down list -->
+			<h2>Favourite Team</h2>
+			<select name="">
+				<option value="so" selected disabled>Select one</option>
+				<option value="mu">Man Utd</option>
+				<option value="bc">Boston Celtic</option>
+				<option value="bf">Barcelona</option>
+			</select>
+			
+			<!-- Submit button -->
+			<input type="submit">
+		</form>	
+	</body>
+</html>
