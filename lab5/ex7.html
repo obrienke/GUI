@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Exercise 7</title>
+    </head>
+    <body bgcolor="lightgreen">
+		<a href="index.html">Lab 5 Home Page</a>
+        <br>
+        <br>
+        <form>
+            First Name:<br>
+            <input type="text" size="30" required><br>
+            Last Name:<br>
+            <input type="text" size="30" required><br>
+            Address 1:<br>
+            <input type="text" size="30" required><br>
+            Address 2:<br>
+            <input type="text" size="30" required><br>
+            County:<br>
+            <input type="text" size="30" required><br>
+            <br><br>
+            <fieldset>
+                <legend><i>Credit card types:</i></legend>
+                <label><input type="radio" name="cc" checked> <img src="img/visa.jpg" height="20" width="25" alt="visa"> </label><br>
+                <label><input type="radio" name="cc"> <img src="img/visa_debit.png" height="20" width="25" alt="visa debit"> </label><br>
+                <label><input type="radio" name="cc"> <img src="img/mastercard.jpg" height="20" width="25" alt="mastercard"> </label><br>
+                <label><input type="radio" name="cc"> <img src="img/amex.jpg" height="20" width="25" alt="american express"> </label><br>
+                <br>
+                <input type="text" size="30" required pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" placeholder="xxxx-xxxx-xxxx-xxxx"> <i>Credit card number</i>
+                <br><br>
+                Expiry year: <select required> 
+                    <!-- Note: required and value="" on first option. This ensures validation works on this drop down-->
+                    <!-- If user fails to pick a value from the drop down then they will be prompted to do so-->
+                    <option selected disabled value="">Select year</option>
+					<option value="1">2029</option>
+                    <option value="1">2028</option>
+                    <option value="2">2027</option>
+                    <option value="3">2026</option>
+                    <option value="4">2025</option>
+                </select>
+                <br><br>
+                Expiry month: <select required>
+                    <option selected disabled value="">Select month</option>
+                    <option value="7">January</option>
+                    <option value="8">February</option>
+                    <option value="9">March</option>
+                    <option value="10">April</option>
+                    <option value="11">May</option>
+                    <option value="12">June</option>
+                    <option value="13">July</option>
+                    <option value="14">August</option>
+                    <option value="15">September</option>
+                    <option value="16">October</option>
+                    <option value="17">November</option>
+                    <option value="18">December</option>
+                </select>
+            </fieldset>
+            <h2>Additional Notes</h2>
+            <textarea rows="4" cols="80" placeholder="Enter additional information here..." required></textarea> 
+            <br>
+            <input type="submit" value="Submit card details">
+        </form>
+    </body>
+</html>
