@@ -1,0 +1,17 @@
+p{
+  color: blue;
+}
+#para1{
+  color: green;
+}
+#para2{
+  font-size: 15px;
+}
+.paras{
+  background-color: aqua;
+  width: 25%;
+}
+*{
+  font-size: 40px;
+}
+a{font-size: medium;}
