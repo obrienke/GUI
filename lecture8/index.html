@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Colors</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Playwrite+TZ+Guides&display=swap');
+
+            #red{color: red;}
+            #green{
+                color: #00FF00;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            #blue{color: #0000FF;}
+            #rgb_blue{color: rgb(0, 0, 255);}
+            #rgb_color{
+                color: rgb(255, 190, 255);
+                font-family: "Playwrite TZ Guides", cursive;
+                font-weight: 400;
+                font-style: normal;
+            }
+            #rgba_blue{color: rgba(0, 0, 255, 0.3);}
+            #hsl_color{color: hsl(30, 50%, 70%);}
+            #hsla_color{color: hsla(330, 50%, 70%, 0.5);}
+            #text{text-decoration: underline;
+            text-transform: capitalize;}
+            a{text-decoration: none;}
+            h1{text-shadow: 5px 1px 8px red;}
+            a:hover{color: hsl(5, 50%, 50%)}
+        </style>
+    </head>
+    <body>
+        <p>Click <a href="../index.html">here</a> to return to homepage</p>
+        <h1>Heading 1</h1>
+        <p id="red">Red</p>
+        <p id="green">Green</p>
+        <p id="blue">Blue</p>
+        <p id="rgb_blue">Blue</p>
+        <p id="rgb_color">Pink</p>
+        <p id="rgba_blue">Light Blue</p>
+        <p id="hsl_color">HSL Color 360/7</p>
+        <p id="hsla_color">HSLA Color</p>
+        <p id="text">Some text in a paragraph</p>
+        <a href="#">A Link</a>
+    </body>
+</html>
