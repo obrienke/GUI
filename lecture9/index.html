@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Box Model</title>
+        <style>
+            div{
+                background-color: rgb(220, 130, 40);
+                width: 50%;
+                padding: 30px;
+            }
+            p{
+                background-color: lightblue;
+                padding: 20px;
+                margin-left: 50px;
+                border-style: solid;
+                border-width: 5px;
+                border-color: black;
+            }
+            #second{
+                background-color: greenyellow;
+                margin-left: 100px;
+                padding: 10px;
+                border: 3px dashed black;
+                border-radius: 30px 20px 5px;
+            }
+            #first{
+                border-top-left-radius: 40px;
+                margin-bottom: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        Click <a href="../index.html">HERE</a> to return to homepage
+        <br><br>
+        <div>
+            <p id="first">A paragraph</p>
+            <p id="second">A second paragraph</p>
+        </div>
+    </body>
+</html>
