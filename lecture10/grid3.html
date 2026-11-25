@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Third Grid</title>
+        <style>
+            div > div{border: 1px solid red;}
+            .container{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 100px 300px;
+                gap: 5px;
+            }
+            #one{
+                grid-column: span 2;
+            }
+            #two{
+                grid-row: span 2;
+            }
+        </style>
+    </head>
+
+    <body>
+       <div class="container">
+            <div id="one">Box 1</div>
+            <div id="two">Box 2</div>
+            <div>Box 3</div>
+            <div>Box 4</div>
+       </div>
+       <br><a href="index.html">Lecture 10 Home Page</a>
+    </body>
+</html>

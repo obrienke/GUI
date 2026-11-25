@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Second Grid</title>
+        <style>
+            div > div{border: 1px solid red;}
+            .container{
+                display: grid;
+                grid-template-columns: 1fr 2fr 2fr 1fr;
+                grid-template-rows: 100px 300px 50px;
+                gap: 2px;
+            }
+            .full{
+                grid-column: span 4;
+            }         
+        </style>
+    </head>
+
+    <body>
+       <div class="container">
+            <div class="full">Box 1</div>
+            <div>Box 2</div>
+            <div>Box 3</div>
+            <div>Box 4</div>
+            <div>Box 5</div>
+            <div class="full">Box 6</div>
+       </div>
+       <br><a href="index.html">Lecture 10 Home Page</a>
+    </body>
+</html>

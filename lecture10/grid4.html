@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fourth Grid</title>
+        <style>
+            div > div{padding: 10px; color: white; text-align: center;}
+            .container{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                grid-template-rows: 100px 300px 50px;
+                gap: 5px;
+            }
+            #one{
+                grid-column: span 5;
+                background-color: red;
+            }
+            #two{
+                background-color: orange;
+            }
+            #three{
+                background-color: yellow;
+                color:blue;
+            }
+            #four{
+                background-color: green;
+            }
+            #five{
+                background-color: blue;
+            }
+            #six{
+                background-color: indigo;
+            }
+
+            #seven{
+                grid-column: span 5;
+                background-color: violet;
+            }
+        </style>
+    </head>
+
+    <body>
+       <div class="container">
+            <div id="one">
+                <h1>Homepage</h1>
+            </div>
+            <div id="two">Box 2</div>
+            <div id="three">Box 3</div>
+            <div id="four">Box 4</div>
+            <div id="five">Box 5</div>
+            <div id="six">Box 6</div>
+            <div id="seven">Box 7</div>
+       </div>
+       <br><a href="index.html">Lecture 10 Home Page</a>
+    </body>
+</html>
